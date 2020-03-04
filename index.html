@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+<div id="container">
+    <div class="ss_body">
+
+        <div class="ss_body_logo">
+            <img name="ss_show_phone_name" src="img/1280px-Samsung_Logo.svg.png"/>
+            <img name="ss_power_button" onclick = "turn_On_Off(samsung)" src="img/button-clipart-standby-4.png" height="25" width="25"/>
+        </div>
+
+        <div class="ss_body_display">
+            <table>
+                <tr>
+                    <td name="show_network">Viettel</td>
+                    <td id="ss_battery" name="ss_show_battery"></td>
+                </tr>
+            </table>
+            <div class="ss_input_message">
+                <p style="margin: 0">* Draft Message</p>
+                <input id="ss_input_message" type="text">
+                <input id="ss_send_button" type="button" onclick="mess_ss_to_ip(samsung,iphone)" value="Send">
+            </div>
+            <div class="ss_receive_message">
+                <p style="margin: 0">* Receiving message</p>
+                <textarea id="ss_receive_message" cols="30" rows="5"></textarea>
+            </div>
+            <div class="ss_check_inbox">
+                <p style="margin: 0">* Inbox</p>
+                <textarea id="ss_check_inbox" cols="39" rows="5"></textarea>
+                <input type="button" onclick="delete_inbox_selection('ss_check_inbox',samsung)" value="Delete">
+                <input type="button" onclick="delete_inbox_all('ip_check_inbox',samsung)" value="Delete All">
+            </div>
+            <div class="ss_check_outbox">
+                <p style="margin: 0">* Outbox</p>
+                <textarea id="ss_check_outbox" cols="39" rows="5"></textarea>
+                <input type="button" onclick="delete_outbox_selection('ss_check_outbox',samsung)" value="Delete">
+                <input type="button" onclick="delete_outbox_all('ss_check_outbox',samsung)" value="Delete All">
+            </div>
+        </div>
+
+        <div class="ss_home_button">
+            <input type="button" id="ss_home_button">
+        </div>
+        <div>
+            <input type="button" id="ss_battery_charging" value="Battery Charging" onclick="ss_battery_charging()">
+        </div>
+    </div>
+
+    <div class="iPhone_body">
+        <div class="iPhone_body_logo">
+            <img name="ip_show_phone_name" src="img/apple-computer-brand-vector-logo.png" height="60px" width="60px" alt="iphonelogo"/>
+            <img name="ip_power_button" onclick = "turn_On_Off(iphone)" src="img/button-clipart-standby-4.png" height="25" width="25"/>
+        </div>
+        <div class="iphone_body_display">
+            <table>
+                <tr>
+                    <td name="show_network">Viettel</td>
+                    <td id="ip_battery" name="ip_show_battery"></td>
+                </tr>
+            </table>
+            <div class="ip_input_message">
+                <p style="margin: 0">* Draft Message</p>
+                    <input id="ip_input_message" type="text">
+                    <input id="ip_send_button" type="button" onclick="mess_ip_to_ss(iphone,samsung)" value="Send">
+            </div>
+            <div class="ip_receive_message">
+                <p style="margin: 0">* Receiving message</p>
+                <textarea id="ip_receive_message" cols="30" rows="5"></textarea>
+            </div>
+            <div class="ip_check_inbox">
+                <p style="margin: 0">* Inbox</p>
+                <textarea id="ip_check_inbox" cols="39" rows="5"></textarea>
+                <input type="button" onclick="delete_inbox_selection('ip_check_inbox',iphone)" value="Delete">
+                <input type="button" onclick="delete_inbox_all('ip_check_inbox',iphone)" value="Delete All">
+            </div>
+            <div class="ss_check_outbox">
+                <p style="margin: 0">* Outbox</p>
+                <textarea id="ip_check_outbox" cols="39" rows="5"></textarea>
+                <input type="button" onclick="delete_outbox_selection('ip_check_outbox',iphone)" value="Delete">
+                <input type="button" onclick="delete_outbox_all('ip_check_outbox',iphone)" value="Delete All">
+            </div>
+        </div>
+
+        <div class="iphone_home_button">
+            <input type="button" id="iphone_home_button">
+        </div>
+        <div>
+            <input type="button" id="ip_battery_charging" value="Battery Charging" onclick="ip_battery_charging()">
+        </div>
+    </div>
+</div>
+<script src="js/myPhone.js"></script>
+<!--<script src="myBattery.js"></script>-->
+</body>
+</html>

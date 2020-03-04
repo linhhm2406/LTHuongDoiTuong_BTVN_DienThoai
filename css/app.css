@@ -1,0 +1,126 @@
+.ss_body {
+    width: 360px;
+    height: 650px;
+    border: 1px black solid;
+    background-color: black;
+    border-radius: 25px;
+    float: left;
+    margin-right: 30px;
+}
+
+.iPhone_body {
+    width: 360px;
+    height: 650px;
+    border: 1px black solid;
+    background-color: beige;
+    border-radius: 25px;
+    float: left;
+    margin-right: 30px;
+}
+
+td[name='show_network'] {
+    padding: 5px;
+    width: 200px;
+}
+
+td[name='ss_show_battery'], td[name='ip_show_battery'] {
+    padding: 5px;
+    width: 200px;
+    text-align: right;
+}
+
+img[name='ip_show_phone_name'] {
+    color: cornflowerblue;
+    margin: auto;
+    padding-left: 155px;
+    padding-top: 0;
+}
+
+img[name='ss_show_phone_name'] {
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    padding-left: 130px;
+    padding-top: 10px;
+    float: left;
+}
+
+img[name='ss_power_button'] {
+    margin-left: 80px;
+    margin-top: 15px;
+}
+img[name='ip_power_button']{
+    margin-left: 90px;
+}
+
+.ss_body_logo {
+    height: 50px;
+    padding: 0;
+    width: 100%;
+
+}
+
+.iPhone_body_logo {
+    height: 65px;
+    padding: 0;
+    width: 100%;
+}
+
+.ss_body_display {
+    height: 84%;
+    width: 95%;
+    border: grey 1px solid;
+    margin: auto;
+    background-color: white;
+}
+
+.iphone_body_display {
+    height: 82%;
+    width: 95%;
+    border: grey 1px solid;
+    margin: auto;
+    background-color: white;
+}
+
+#ss_home_button {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+#iphone_home_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 5px;
+}
+
+.ss_home_button, .iphone_home_button {
+    margin: auto;
+    width: 95%;
+}
+
+#ss_input_message, #ip_input_message {
+    height: 40px;
+    width: 280px;
+}
+
+#ss_send_button, #ip_send_button {
+    height: 45px;
+}
+
+.ip_receive_message, .ip_check_inbox, .ss_receive_message, .ss_check_inbox, .ss_input_message, .ip_input_message, .ss_check_outbox {
+    padding-top: 15px;
+    padding-left: 3px;
+}
+
+#ip_receive_message, #ss_receive_message {
+    width: 96%;
+}
+
+#ss_battery_charging, #ip_battery_charging{
+    margin-top: 20px;
+}
